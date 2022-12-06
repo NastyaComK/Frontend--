@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+<!-- my styles -->
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<!-- my styles -->
+<!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- google fonts -->
+<!-- fontawesome -->
+<script
+src="https://kit.fontawesome.com/dc4f8560f3.js"
+crossorigin="anonymous"
+></script>
+<!-- fontawesome -->
+<!-- favicon -->
+<link
+rel="icon"
+type="image/png"
+sizes="16x16"
+href="img/favicon-16x16.png"
+/>
+<!-- favicon -->
+
+    <title>Контакты</title>
+  </head>
+  <body>
+<!------------------ Хедер ---------------------->
+        <nav class="navbar navbar-expand-lg navbar-light navigation font400">
+          <a class="navbar-brand text-light">Что хочешь узнать?</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Переключатель навигации"
+          >
+            <span style="color: white"><i class="fa-solid fa-bars fa-2x"></i></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="home_page.html"
+                  >Главная <span class="sr-only">(текущая)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="chiksy_project.html">О нас</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  id="navbarScrollingDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  АЛКОТЕСТЕР
+                </a>
+                <ul class="navigation dropdown-menu aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="navigation dropdown-item" href="rools.html">Правила</a></li>
+                  <li><a class="navigation dropdown-item" href="delivery.html">Доставка</a></li>
+                  <li><hr class="navigation dropdown-divider" /></li>
+                  <li><a class="navigation dropdown-item" href="buy_game.html">Заказать игру</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+<!------------------ Хедер ---------------------->
+<!---------------Панелька обратной связи------------------>
+    <div class="container-fluid contact-container pl-5 pr-5 pb-5">
+      <section>
+        <h2 class="h1-responsive text-center text-light pt-5 font700">
+          Связаться с нами
+        </h2>
+        <p class="font600 text-center mb-5 text-light">
+          Мы очень надеемся, что тебе нравится игра или ты хочешь ее заказать) Ты всегда можешь написать нам свои пожелания :) или жалобы :(
+            Мы рады любому фидбеку! Подписывайся на наш инстаграм!
+        </p>
+        <div class="row">
+          <div class="col-md-9 mb-md-0 mb-5">
+            <form
+              id="form"
+              name="contact-form"
+              action="#"
+              method="POST"
+              class="form_body"
+            >
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="md-form mb-0 form_item">
+                    <input
+                      type="text"
+                      id="formName"
+                      name="name"
+                      class="form-control form_input _req"
+                    />
+                    <label for="formName" class="font300 text-light form_label">Твое имя</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="md-form mb-0 form_item">
+                    <input
+                      type="text"
+                      id="formEmail"
+                      name="email"
+                      class="form-control form_input _req"
+                    />
+                    <label for="formEmail" class="font300 text-light form_label _email">Твоя почта</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form mb-0 form_item">
+                    <input
+                      type="text"
+                      id="fromsubject"
+                      name="subject"
+                      class="form-control _req"
+                    />
+                    <label for="formsubject" class="font300 text-light form_label">Тема письма</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form form_item">
+                    <textarea
+                      type="text"
+                      id="formMessage"
+                      name="message"
+                      rows="2"
+                      class="form-control md-textarea form_label"
+                      required="required"
+                    ></textarea>
+                    <label for="formMessage" class="font300 text-light form_message">Твое письмо</label>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center text-md-left">
+                <button
+                  class="btn btn-send-form font300 form_button" type="submit"
+                  >Отправить</button
+                >
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3 text-center text-light">
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <p class="font400">Москва, Россия</p>
+              </li>
+              <li>
+                <i class="fas fa-envelope mt-4 fa-2x"></i>
+                <p class="font400">Chiksy2022@yandex.ru</p>
+              </li>
+              <li onclick="document.location='https://instagram.com/chiksy_project?igshid=MDM4ZDc5MmU='" class="pt-3">
+                <i class="fas fa-brands fa-instagram fa-2x text inst_btn"></i>
+                <p class="font400 inst_btn">chiksy_project</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+<!---------------Панелька обратной связи------------------>
+<!------------------ Футер ---------------------->
+        <section class="bg_purple">
+          <footer class="text-white">
+            <div class="container p-4">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase font400">Сделай свою вечеринку еще круче!</h5>
+                  <p class="font300">
+                    Тусовка? Алкотестер!
+                    Проведи великолепную вечеринку. Узнай своих друзей лучше. Познакомься с незнакомцем.
+                  </p>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase font400">Наши Соцсети</h5>
+    
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a
+                        class="text-light"
+                        href="https://www.tiktok.com/@chiksy_project?_t=8XksQRIQsRl&_r=1"
+                        ><i class="fa-brands fa-tiktok fa-2x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        class="text-light"
+                        href="https://instagram.com/chiksy_project?igshid=MDM4ZDc5MmU="
+                        ><i class="fa-brands fa-instagram fa-2x"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-0 font400">
+                    Мы всегда рады обратной связи!
+                  </h5>
+    
+                  <ul class="list-unstyled">
+                    <li>
+                      <a type="button" class="font300 btn btn-lg com-fut-btn" href="contacts.html">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="text-center p-3 font300"
+              style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+              © 2022 АЛКОТЕСТЕР
+            </div>
+          </footer>
+        </section>
+<!------------------ Футер ---------------------->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById("form");
+    form.addEventListener('submit', formSend);
+
+
+    async function formSend(e) {
+        e.preventDefault();
+
+        let error = formValidate(form);
+
+        let formData = new FormData(form);
+
+        if (error === 0 ) {
+          form.classList.add('_sending');
+         let response = await fetch ('sendmail.php', {
+         method: 'POST', 
+         body: formData
+          })
+          if (response.ok) {
+            let result = await response.json();
+            alert(result.message);
+            form.reset ();
+            form.classList.remove('_sending');
+          } else {
+            alert ('Кажется что-то пошло не так')
+            form.classList.remove('_sending');
+          }
+        } else {
+          alert ('Если хочешь отправить нам сообщение, то заполни все поля, пожалуйста)');
+        }
+    }
+
+    function formValidate(form) {
+        let error = 0;
+        let formReq = document.querySelectorAll('._req')
+
+        for (let index = 0; index < formReq.length; index++){
+            const input = formReq[index];
+            formRemoveError(input);
+
+            if(input.classList.contains('_email')){
+                if(emailTest(input)){
+                    formAddError(input);
+                    error++;
+                }
+            } else {
+                if (input.value === ""){
+                    formAddError(input);
+                    error++;
+                }
+            }
+        }
+        return error;
+    }
+    function formAddError(input) {
+        input.parentElement.classList.add('_error');
+        input.classList.add('_error')
+    }
+    function formRemoveError(input) {
+        input.parentElement.classList.remove('_error');
+        input.classList.remove('_error');
+    }
+    function emailTest(input) {
+        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+    }
+
+})
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

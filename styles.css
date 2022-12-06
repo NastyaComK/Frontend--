@@ -1,0 +1,932 @@
+/********************** HOME_PAGE **********************/
+/********************** Хедер **********************/
+.navigation {
+  background-color: rgb(175, 34, 180);
+  color: white;
+}
+.navigation:hover {
+  background-color: rgb(175, 34, 180);
+  color: rgb(212, 201, 201);
+}
+.navbar-expand-lg {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+/********************** Хедер **********************/
+/********************** Приветственное окошко **********************/
+.know-btn {
+  border: 2px rgb(175, 34, 180) solid;
+  color: white;
+  border-radius: 50%;
+}
+.know-btn:hover {
+  border: 2px rgb(255, 255, 255) solid;
+  color: white;
+  background-color: rgb(175, 34, 180);
+  border-radius: 50%;
+}
+.know-card {
+  background-color: rgb(247, 105, 29);
+}
+/********************** Приветственное окошко **********************/
+/********************** Шрифт **********************/
+.font300 {
+  font-family: "Comfortaa", cursive;
+  font-size: 300;
+}
+.font400 {
+  font-family: "Comfortaa", cursive;
+  font-size: 400;
+}
+.font500 {
+  font-family: "Comfortaa", cursive;
+  font-size: 500;
+}
+.font600 {
+  font-family: "Comfortaa", cursive;
+  font-size: 600;
+}
+.font700 {
+  font-family: "Comfortaa", cursive;
+  font-size: 700;
+}
+/********************** Шрифт **********************/
+/********************** Первый блок **********************/
+.hero-banner {
+  background: white;
+  position: relative;
+}
+@media (min-width: 991px) {
+  .hero-banner {
+    z-index: 3;
+  }
+}
+.hero-banner::before {
+  content: "";
+  display: block;
+  width: 5%;
+  height: 100%;
+  background: rgb(175, 34, 180);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 575px) {
+  .hero-banner::before {
+    width: 20%;
+  }
+}
+@media (min-width: 991px) {
+  .hero-banner::before {
+    width: 35%;
+  }
+}
+.hero-banner__img {
+  position: relative;
+  top: 1px;
+}
+.hero2-banner__img {
+  position: relative;
+  right: 0px;
+}
+@media (max-width: 575px) {
+  .hero-banner__content {
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 1000px) {
+  .hero-banner__content {
+    max-width: 495px;
+  }
+}
+.hero-banner__content h4 {
+  margin-bottom: 12px;
+}
+.hero-banner__content h1 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+@media (min-width: 767px) {
+  .hero-banner__content h1 {
+    margin-bottom: 25px;
+  }
+}
+.hero-banner__content p {
+  margin-bottom: 10px;
+}
+@media (min-width: 767px) {
+  .hero-banner__content p {
+    margin-bottom: 40px;
+  }
+}
+.button-hero {
+  padding: 12px 41px;
+}
+.pt-60px {
+  padding-top: 60px;
+}
+.party-alko {
+  color: rgb(247, 105, 29);
+}
+.buy-fun {
+  color: rgb(175, 34, 180);
+}
+.buy-btn {
+  border: 2px rgb(255, 255, 255) solid;
+  color: white;
+  font-weight: bold;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(247, 105, 29);
+  border-radius: 50%;
+}
+.buy-btn:hover {
+  border: 2px rgb(175, 34, 180) solid;
+  color: rgb(247, 105, 29);
+  width: 280px;
+  height: 100px;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: white;
+}
+/********************** Первый блок **********************/
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+/********************** Второй блок **********************/
+.section-margin {
+  background-color: rgb(175, 34, 180);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.owl-carousel .owl-stage {
+  display: flex;
+}
+.hero-carousel__slide {
+  position: relative;
+}
+.hero-carousel__slide::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.hero-carousel__slideOverlay {
+  position: absolute;
+  bottom: 50px;
+  background: rgb(247, 105, 29);
+  padding: 23px 90px 23px 25px;
+  transform: translateY(50px);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
+.hero-carousel__slideOverlay h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.hero-carousel__slideOverlay p {
+  color: #fff;
+  margin: 0;
+}
+.hero-carousel__slide:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+.hero-carousel__slide:hover .hero-carousel__slideOverlay {
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 2;
+}
+.second-img {
+  height: 340px;
+  width: 295px;
+}
+.tree {
+  box-shadow: 12px 12px 12px 12px rgb(102, 19, 105);
+}
+.tree2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 575px) {
+  .tree2 {
+    margin: 0.5rem;
+  }
+}
+/********************** Второй блок **********************/
+/********************** Футер **********************/
+.footer-contacts {
+  font-size: 24px;
+}
+.com-fut-btn {
+  border: 2px rgb(247, 105, 29) solid;
+  color: white;
+  border-radius: 50%;
+}
+.com-fut-btn:hover {
+  border: 2px white solid;
+  color: white;
+  background-color: rgb(247, 105, 29);
+  border-radius: 50%;
+}
+/********************** Футер **********************/
+/********************** HOME_PAGE **********************/
+/********************** CONTACTS **********************/
+.contact-container {
+  background-color: rgb(247, 105, 29);
+}
+.btn-send-form {
+  color: white;
+  border: solid rgb(175, 34, 180) 2px;
+  border-radius: 50%;
+}
+.btn-send-form:hover {
+  color: white;
+  background-color: rgb(175, 34, 180);
+  border: solid white 2px;
+  border-radius: 50%;
+}
+.inst_btn {
+  cursor: pointer;
+}
+.inst_btn:hover {
+  color: #c5c5c5;
+}
+._form_input._error {
+  box-shadow: 15px 15px 15px rgba(3, 0, 0, 0.438);
+}
+.form_body {
+  position: relative;
+}
+.form_body::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.397) url(img/Ao.gif) center / 200px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+.form_body.sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+.form_input {
+  width: 75%;
+}
+/********************** CONTACTS **********************/
+/********************** BUY GAME **********************/
+.fa-angle-right {
+  color: rgb(247, 105, 29);
+}
+.alko-font {
+  position: relative;
+  z-index: 6;
+}
+.alko-block {
+  position: absolute;
+  z-index: 6;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.window-blok {
+  width: 50%;
+  height: 50%;
+  border: solid rgb(247, 105, 29) 5px;
+  background-color: #c5c5c5;
+}
+.white-card {
+  width: 50%;
+  height: 50%;
+  background-color: #fffefe;
+}
+.bg_purple {
+  background-color: rgb(175, 34, 180);
+}
+.bg_orange {
+  background-color: rgb(247, 105, 29);
+}
+.text_purple {
+  color: rgb(175, 34, 180);
+}
+.text_orange {
+  color: rgb(247, 105, 29);
+}
+.bg_white {
+  background-color: #fff;
+}
+.card-body-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .offer {
+    background-size: 100% 100%;
+  }
+}
+.offer__content {
+  padding: 100px 0 110px 0;
+}
+@media (min-width: 1000px) {
+  .offer__content {
+    padding: 122px 0 135px 0;
+  }
+}
+.offer__content h3 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+@media (min-width: 650px) {
+  .offer__content h3 {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+}
+.offer__content h4 {
+  font-size: 30px;
+}
+.offer__content p {
+  color: #555555;
+}
+.offer__content {
+  padding: 100px 0 110px 0;
+}
+@media (min-width: 1000px) {
+  .offer__content {
+    padding: 122px 0 135px 0;
+  }
+}
+.offer__content h3 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+@media (min-width: 650px) {
+  .offer__content h3 {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+}
+.offer__content h4 {
+  font-size: 30px;
+}
+.offer__content p {
+  color: #ffffff;
+}
+.offer_text {
+  background-color: rgba(175, 34, 180, 0.425);
+}
+.delivery {
+  background-color: rgb(201, 84, 20);
+}
+.delivery2 {
+  background-color: rgb(168, 69, 16);
+}
+.shopcart {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+@media (max-width: 575px) {
+  .shopcart {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+}
+.shop_container {
+  position: relative;
+  height: 410px;
+}
+/********************** BUY GAME **********************/
+/********************** DELIVERY **********************/
+.blog-banner-area {
+  height: 280px;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 1000px) {
+  .blog-banner-area {
+    height: 410px;
+  }
+}
+.blog-banner-area .blog-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.blog-banner-area::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(247, 105, 29);
+  z-index: -1;
+}
+.blog-banner {
+  position: relative;
+}
+.blog-banner h4,
+.blog-banner h1,
+.blog-banner a {
+  text-transform: capitalize;
+  color: #fff;
+}
+.blog-banner h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.blog-banner h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #222;
+}
+.blog_categorie_area .col-lg-4 {
+  margin-top: 30px;
+}
+.categories_post img {
+  width: 100%;
+}
+.categories_post {
+  max-width: 360px;
+  margin: 0 auto;
+}
+.categories_post .categories_details {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(34, 34, 34, 0.75);
+  color: #fff;
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.categories_post .categories_details h5 {
+  margin-bottom: 0px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+}
+.categories_post .categories_details p {
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 0px;
+}
+.categories_post .categories_details .border_line {
+  margin: 10px 0px;
+  background: #fff;
+  width: 100%;
+  height: 1px;
+}
+.categories_post:hover .categories_details {
+  background: rgba(175, 34, 180, 0.5);
+}
+.blog_post_img {
+  height: 230px;
+  width: auto;
+}
+@media (max-width: 565px) {
+  .blog_post_img {
+    height: 230px;
+    width: 450px;
+  }
+}
+/********************** DELIVERY **********************/
+/********************** CHIKSY PROJECT **********************/
+/********************** Две подружки **********************/
+.oleez-landing-section {
+  padding-top: 130px;
+  padding-bottom: 125px;
+}
+.oleez-landing-section:nth-child(odd) {
+  background-color: rgb(175, 34, 180);
+}
+.oleez-landing-section:nth-child(odd)
+  .oleez-landing-section-content
+  .oleez-landing-section-verticals::after {
+  background-color: rgb(247, 105, 29);
+}
+.oleez-landing-section .oleez-landing-section-content {
+  padding-left: 212px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .oleez-landing-section .oleez-landing-section-content {
+    padding-left: 112px;
+  }
+}
+@media (max-width: 767px) {
+  .oleez-landing-section .oleez-landing-section-content {
+    padding-left: 50px;
+  }
+}
+.oleez-landing-section
+  .oleez-landing-section-content
+  .oleez-landing-section-verticals {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding-top: 11px;
+}
+.oleez-landing-section
+  .oleez-landing-section-content
+  .oleez-landing-section-verticals
+  .number {
+  font-size: 20px;
+  color: rgb(247, 105, 29);
+  line-height: 1;
+  display: inline-block;
+  margin-right: 13px;
+}
+.oleez-landing-section
+  .oleez-landing-section-content
+  .oleez-landing-section-verticals
+  img {
+  position: relative;
+  top: -3px;
+}
+@media (max-width: 767px) {
+  .oleez-landing-section
+    .oleez-landing-section-content
+    .oleez-landing-section-verticals
+    img {
+    display: none;
+  }
+}
+.oleez-landing-section
+  .oleez-landing-section-content
+  .oleez-landing-section-verticals::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  position: absolute;
+  top: 50px;
+  left: 11px;
+  bottom: 0;
+  background-color: rgb(175, 34, 180);
+}
+.oleez-landing-section .oleez-landing-section-content .section-title {
+  font-size: 30px;
+  line-height: 1.33;
+  font-weight: 500;
+}
+.oleez-landing-section-about h2 {
+  font-size: 30px;
+  line-height: 1.33;
+}
+.oleez-landing-section-about p {
+  font-size: 15px;
+  line-height: 1.67;
+}
+.oleez-landing-section-about .landing-about-content {
+  margin-bottom: 70px;
+}
+.oleez-landing-section-about .landing-about-feature .about-feature-icon {
+  margin-bottom: 45px;
+}
+.oleez-landing-section-about .landing-about-feature .about-feature-title {
+  line-height: 1.1;
+  margin-bottom: 13px;
+}
+.oleez-landing-section-about .landing-about-feature .about-feature-description {
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.oleez-landing-section-projects .section-title {
+  margin-bottom: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.oleez-landing-section-projects .section-title .all-projects-link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
+  color: #100e0e;
+  text-decoration: underline;
+}
+.oleez-landing-section-projects .landing-project-card {
+  border: 0;
+  border-radius: 0;
+  margin-right: 23px;
+  overflow: hidden;
+}
+.oleez-landing-section-projects .landing-project-card img {
+  height: 300px;
+  border-radius: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.oleez-landing-section-projects .landing-project-card .card-img-overlay {
+  left: auto;
+  width: 0;
+  background-color: #000;
+  padding-top: 170px;
+  width: 236px;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+}
+@media (max-width: 991px) {
+  .oleez-landing-section-projects .landing-project-card .card-img-overlay {
+    width: 175px;
+  }
+}
+@media (max-width: 767px) {
+  .oleez-landing-section-projects .landing-project-card .card-img-overlay {
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .oleez-landing-section-projects .landing-project-card .card-img-overlay {
+    width: 160px;
+  }
+}
+.oleez-landing-section-projects
+  .landing-project-card
+  .card-img-overlay
+  .project-category {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .oleez-landing-section-projects
+    .landing-project-card
+    .card-img-overlay
+    .project-category {
+    font-size: 12px;
+  }
+}
+.oleez-landing-section-projects
+  .landing-project-card
+  .card-img-overlay
+  .project-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .oleez-landing-section-projects
+    .landing-project-card
+    .card-img-overlay
+    .project-title {
+    font-size: 18px;
+  }
+}
+.oleez-landing-section-projects
+  .landing-project-card.slick-active
+  .card-img-overlay {
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
+.oleez-landing-section-projects .slick-navbtn-wrapper {
+  padding-top: 19px;
+}
+.oleez-landing-section-projects .slick-navbtn-wrapper .slick-nav-btn {
+  width: 45px;
+  height: 45px;
+  background-color: #000000;
+  border: 0;
+  border-radius: 0;
+}
+.oleez-landing-section-projects .slick-navbtn-wrapper .slick-nav-btn:focus {
+  outline: none;
+}
+.oleez-landing-section-team .landing-team-content {
+  margin-bottom: 52px;
+}
+.oleez-landing-section-team .landing-team-card .team-card-img {
+  width: 100%;
+  margin-bottom: 39px;
+}
+.oleez-landing-section-team .landing-team-card .team-card-name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.oleez-landing-section-team .landing-team-card .team-card-job {
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.oleez-landing-section-team .landing-team-card .team-card-social-links a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 10px;
+  color: #100e0e;
+}
+.oleez-landing-section-team .landing-team-card .team-card-social-links a:hover {
+  text-decoration: none;
+}
+.about-feature-icon {
+  height: 100px;
+  filter: invert(100%);
+}
+/********************** Две подружки **********************/
+/********************** АЛКОТЕСТЕР/WANTED **********************/
+.foi-page-section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.about-section-one-title {
+  font-size: 38px;
+  margin-bottom: 28px;
+}
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+.about-section-one-content {
+  max-width: 380px;
+}
+.page-about p {
+  font-size: 18px;
+  line-height: 1.56;
+  margin-bottom: 45px;
+}
+/********************** АЛКОТЕСТЕР/WANTED **********************/
+/********************** Сообщество **********************/
+.page-blog-post .blog-post-date {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2.33;
+}
+.page-blog-post .blog-post-title {
+  margin-bottom: 40px;
+}
+.page-blog-post .blog-post-content p {
+  font-size: 20px;
+  line-height: 1.71;
+}
+.page-blog-post .blog-post-content blockquote {
+  position: relative;
+  padding-left: 27px;
+  margin-bottom: 40px;
+}
+.page-blog-post .blog-post-content blockquote p {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.page-blog-post .blog-post-content blockquote::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 7px;
+  background-color: rgb(175, 34, 180);
+  left: 0;
+  top: 8px;
+  bottom: 10px;
+}
+.page-blog-post
+  .blog-post-author-info-section
+  .blog-post-author-info-section-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2.78;
+  margin-bottom: 13px;
+}
+.page-blog-post .blog-post-author-info-section .blog-post-author-info {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-bottom: 57px;
+}
+.page-blog-post
+  .blog-post-author-info-section
+  .blog-post-author-info
+  .blog-post-author-avatar {
+  width: 68px;
+  max-width: 100%;
+  margin-right: 27px;
+}
+.page-blog-post .blog-post-author-info-section .blog-post-author-info h6 {
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 700;
+}
+.page-blog-post
+  .blog-post-author-info-section
+  .blog-post-author-info
+  .author-social-links
+  a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  line-height: 20px;
+  margin-right: 5px;
+}
+.page-blog-post
+  .blog-post-author-info-section
+  .blog-post-author-info
+  .author-description {
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 0;
+}
+
+.page-blog-post .related-posts-section {
+  margin-bottom: 100px;
+}
+.page-blog-post .related-posts-section .related-posts-section-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.45;
+  margin-bottom: 28px;
+}
+.page-blog-post
+  .related-posts-section
+  .related-post
+  .related-post-thumbnail-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+.page-blog-post
+  .related-posts-section
+  .related-post
+  .related-post-thumbnail-wrapper
+  img {
+  max-width: 100%;
+}
+.page-blog-post
+  .related-posts-section
+  .related-post
+  .related-post-thumbnail-wrapper
+  .blog-post-badge {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.page-blog-post .related-posts-section .related-post .post-published-date {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2.33;
+  margin-bottom: 0;
+}
+.page-blog-post .related-posts-section .related-post .post-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #000000;
+  margin-bottom: 0;
+}
+blockquote {
+  margin: 0 0 1rem;
+}
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.blockquote-footer {
+  display: block;
+  font-size: 80%;
+}
+.blockquote-footer::before {
+  content: "\2014\00A0";
+}
+/********************** Сообщество **********************/
+/********************** CHIKSY PROJECT **********************/

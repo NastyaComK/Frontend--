@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+<!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+<!-- bootstrap -->
+<!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+<!-- favicon -->
+<!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/dc4f8560f3.js"
+      crossorigin="anonymous"
+    ></script>
+<!-- fontawesome -->
+<!-- my styles -->
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+<!-- my styles -->
+<!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- google fonts -->
+    <title>АЛКОТЕСТЕР</title>
+  </head>
+  <body>
+    <!------------------ Хедер ---------------------->
+    <nav class="navbar navbar-expand-lg navbar-light navigation font400">
+      <a class="navbar-brand text-light">Что хочешь узнать?</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Переключатель навигации"
+      >
+        <span style="color: white"><i class="fa-solid fa-bars fa-2x"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="home_page"
+              >Главная <span class="sr-only">(текущая)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="chiksy_project">О нас</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              id="navbarScrollingDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              АЛКОТЕСТЕР
+            </a>
+            <ul class="navigation dropdown-menu aria-labelledby="navbarScrollingDropdown">
+              <li><a class="navigation dropdown-item" href="rools">Правила</a></li>
+              <li><a class="navigation dropdown-item" href="delivery">Доставка</a></li>
+              <li><hr class="navigation dropdown-divider" /></li>
+              <li><a class="navigation dropdown-item" href="buy_game">Заказать игру</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!------------------ Хедер ---------------------->
+    <!------------------ Приветственное окошко ---------------------->
+    <div class="card mb-3">
+      <img src="img/question.gif" class="card-img-top" alt="вопросики" />
+      <div class="card-body text-center know-card">
+        <h3 class="card-title text-light font500">Как сделать твою вечеринку круче?</h3>
+        <a type="button" class="font300 btn btn-lg know-btn" href="#buy">Узнать ↓</a>
+      </div>
+    </div>
+    <!------------------ Приветственное окошко ---------------------->
+    <!------------------ Первый блок ---------------------->
+    <section class="hero-banner">
+      <div class="container">
+        <div class="row no-gutters align-items-center pt-60px">
+          <div class="col-5 d-none d-sm-block">
+            <div class="hero-banner__img">
+              <img class="img-fluid" src="img/popcorn.JPEG" alt="popcorn">
+            </div>
+          </div>
+
+          <div class="col-sm-7 col-lg-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
+            <div class="hero-banner__content">
+              <h4 id="buy" class="font300 buy-fun">Покупки это весело</h4>
+              <h1 class="font700 party-alko">Тусовка? Алкотестер!</h1>
+              <p class="font500 buy-fun">Каждая вечеринка может стать еще лучше. Стоит добавить всего одну маленькую коробочку с настольной игрой!</p>
+              <button onclick="document.location='buy_game'" type="button" class="font400 btn-lg text-center buy-btn">Закажи прямо сейчас</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------ Первый блок ---------------------->
+    <!------------------ Картинка ---------------------->
+    <div class="container-fluid">
+      <img src="img/alkotester.JPG" class="card-img-top w-100" alt="алкотестер"/>
+    </div>
+    <!------------------ Картинка ---------------------->
+    <!------------------ Второй блок ---------------------->
+    <div class="card-group section-margin hero-carousel">
+      <div class="card hero-carousel__slide m-2">
+        <img src="img/cop1.jpeg" class="tree card-img-top img-fluid" alt="...">
+        <a href="rools" class="hero-carousel__slideOverlay">
+          <h3 class="font500">Правила</h3>
+          <p class="font400">Узнай как играть</p>
+        </a>
+      </div>
+      <div class="card hero-carousel__slide bg_purple tree2">
+        <img src="img/colb.jpg" class="tree card-img-top img-fluid" alt="...">
+        <a href="chiksy_project" class="hero-carousel__slideOverlay">
+          <h3 class="font500">О нас</h3>
+          <p class="font400">Узнай кто создал игру</p>
+        </a>
+      </div>
+      <div class="card hero-carousel__slide m-2">
+        <img src="img/box.JPEG" class="tree card-img-top img-fluid" alt="...">
+        <a href="delivery" class="hero-carousel__slideOverlay">
+          <h3 class="font500">Доставка</h3>
+          <p class="font400">Узнай как получить игру</p>
+        </a>
+      </div>
+    </div>
+    <!------------------ Второй блок ---------------------->
+    <!------------------ Футер ---------------------->
+    <section class="bg_purple">
+      <footer class="text-white">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase font400">Сделай свою вечеринку еще круче!</h5>
+              <p class="font300">
+                Тусовка? Алкотестер!
+                Проведи великолепную вечеринку. Узнай своих друзей лучше. Познакомься с незнакомцем.
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase font400">Наши Соцсети</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a
+                    class="text-light"
+                    href="https://www.tiktok.com/@chiksy_project?_t=8XksQRIQsRl&_r=1"
+                    ><i class="fa-brands fa-tiktok fa-2x"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="text-light"
+                    href="https://instagram.com/chiksy_project?igshid=MDM4ZDc5MmU="
+                    ><i class="fa-brands fa-instagram fa-2x"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0 font400">
+                Мы всегда рады обратной связи!
+              </h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a type="button" class="font300 btn btn-lg com-fut-btn" href="contacts">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center p-3 font300"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2022 АЛКОТЕСТЕР
+        </div>
+      </footer>
+    </section>
+    <!------------------ Футер ---------------------->
+
+    <script src="../JS/jquery-3.6.1.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
